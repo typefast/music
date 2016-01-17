@@ -1,4 +1,5 @@
 <% @albums.each do |album| %>
-  <p><%= album.title %></p>
-  <p><%= album.artist %></p>
+  <p>Title: <%= album.title %></p>
+  <p>Artist: <%= album.artist %></p>
+  <p><%= link_to 'See More', album_path(album) %></p>
 <% end %>
