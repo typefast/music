@@ -1,1 +1,7 @@
-<h1>Album</h1>
+<h1><%= @album.title %></h1>
+<p><%= @album.artist %></p>
+
+<% @tracks.each do |track| %>
+  <p><%= track.title %></p>
+  <p><%= track.duration %> mins</p>
+<% end %>
