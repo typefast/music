@@ -1,6 +1,13 @@
-<% @albums.each do |album| %>
-  <%= image_tag album.image %>
-  <p>Title: <%= album.title %></p>
-  <p>Artist: <%= album.artist %></p>
-  <p><%= link_to 'See More', album_path(album) %></p>
-<% end %>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+      <% @albums.each do |album| %>
+        <div class="text-center album">
+          <%= image_tag album.image %>
+          <p>Title: <%= album.title %></p>
+          <p>Artist: <%= album.artist %></p>
+          <p><%= link_to 'See More', album_path(album) %></p>
+        </div>
+      <% end %>
+  </div>
+</div>

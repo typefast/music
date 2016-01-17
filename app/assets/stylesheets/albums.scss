@@ -1,3 +1,31 @@
 // Place all the styles related to the Albums controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.custom-nav {
+  background-color: red;
+  opacity: .7;
+  border-bottom: none;
+  padding: .6em 0;
+}
+
+.album {
+  margin-top: 1em;
+  padding: 1em;
+  background: #ddd;
+  border-radius: 10px;
+
+  img {
+    width: 70%;
+    border: 10px solid #000;
+  }
+  
+  p {
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
+
+
+
