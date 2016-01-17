@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-a1 = Album.create(title: "Music Thing", artist: "Stranger")
-a2 = Album.create(title: "Shadows of your mind", artist: "Guy")
+a1 = Album.create(title: "Music Thing", artist: "Stranger", image: "http://images.freeimages.com/images/previews/f86/guitar-1424095.jpg")
+a2 = Album.create(title: "Shadows of your mind", artist: "Guy", image: "http://images.freeimages.com/images/previews/754/reaching-sun-1566932.jpg")
 
 t1 = Track.create(title: "A song for you", duration: "3")
 t2 = Track.create(title: "Blurry lines", duration: "4")
