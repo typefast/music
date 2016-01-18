@@ -1,7 +1,14 @@
-<h1><%= @album.title %></h1>
-<p><%= @album.artist %></p>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
 
-<% @tracks.each do |track| %>
-  <p><%= track.title %></p>
-  <p><%= track.duration %> mins</p>
-<% end %>
+    <h1 class="track-title"><%= @album.title %></h1>
+    <p class="artist">Artist: <%= @album.artist %></p>
+    
+    <% @tracks.each do |track| %>
+      <div class="track">
+        <p><%= track.title %> Length: <%= track.duration %> mins</p>
+      </div>
+    <% end %>
+    
+  </div>
+</div>
